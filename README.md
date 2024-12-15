@@ -1,1 +1,1 @@
-This is my repository for learning Machine Learning using OpenCv in python. I'll be using Jupyter Notebooks to make learing easier.
+This is my repository for learning ML with OpenCv in Python. I'll be using Jupyter Notebooks to make learning easier.
