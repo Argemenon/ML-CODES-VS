@@ -1,4 +1,4 @@
-# Learning OpenCV usign Jupyter Notebook
+# Learning OpenCV using Jupyter Notebook
 
 This is my repo for learing OpenCV, an open-source computer vison library using Jupyter Notebook
 
