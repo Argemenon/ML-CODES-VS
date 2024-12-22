@@ -4,6 +4,6 @@ This is my repo for learning OpenCV, an open-source computer vision library usin
 
 ## Introduction
 
-This project aims to help learn OpenCV from scratch with examples implemented in Python using Jupyter Notebook. The notebook covers basic image processing techniques as of now
+This project aims to help learn OpenCV from scratch with examples implemented in Python using Jupyter Notebook. The notebook covers basic image processing techniques as of now.
 The library also contains programs handling basic python GUI
 #### ~Argemenon
