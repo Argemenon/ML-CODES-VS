@@ -39,10 +39,10 @@ D. Installing Ubntu
 
 Ubuntu is now installed and you can now access both ubuntu and windows via the grub menu that will appear as your system powers on.
 
-
-
-
-
+|
+|
+|
+|
 
 2. ***CREATING ANACONDA ENVIRONMENTS IN UBUNTU***
 
@@ -96,10 +96,10 @@ You are now in your new conda env. You can now select this environment by Changi
 
         ```
 
-
-
-
-
+|
+|
+|
+|
 
 3. ***Installing tkinter library in python***
 
