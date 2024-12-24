@@ -7440,7 +7440,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="%5B0%5D-Addition-of-Images">[0] Addition of Images<a class="anchor-link" href="#%5B0%5D-Addition-of-Images">¶</a></h1>
+<h1 id="%5B1%5D-Addition-of-Images">[1] Addition of Images<a class="anchor-link" href="#%5B1%5D-Addition-of-Images">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7449,10 +7449,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [139]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span> <span class="c1">#[1]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[2]</span>
+
+<span class="kn">import</span> <span class="nn">cv2</span> 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
@@ -7467,7 +7469,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="%5B2%5D-Single-Channel-Images">[2] Single Channel Images<a class="anchor-link" href="#%5B2%5D-Single-Channel-Images">¶</a></h2>
+<h2 id="%5B3%5D-Single-Channel-Images">[3] Single Channel Images<a class="anchor-link" href="#%5B3%5D-Single-Channel-Images">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7478,7 +7480,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%5B3%5D-Simple-Addition">[3] Simple Addition<a class="anchor-link" href="#%5B3%5D-Simple-Addition">¶</a></h3>
+<h3 id="%5B4%5D-Simple-Addition">[4] Simple Addition<a class="anchor-link" href="#%5B4%5D-Simple-Addition">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7489,7 +7491,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>[4] Let us first try adding the following single channel images together:</p>
+<p>[5] Let us first try adding the following single channel images together:</p>
 <img alt="No description has been provided for this image" src="Images/bwdiagonal.jpg" width="300"/>
 <img alt="No description has been provided for this image" src="Images/white.jpg" width="300"/>
 </div>
@@ -7500,10 +7502,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [140]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">img1</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">"Images/bwdiagonal.jpg"</span><span class="p">)</span>  <span class="c1">#[5]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[6]</span>
+
+<span class="n">img1</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">"Images/bwdiagonal.jpg"</span><span class="p">)</span>  
 <span class="n">img2</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">"Images/white.jpg"</span><span class="p">)</span>
 
 <span class="n">mat1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">img1</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span>
@@ -7522,9 +7526,9 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[140]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.image.AxesImage at 0x78979371b1a0&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x722a58391ca0&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7542,7 +7546,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>[6] The above code did simple matrix addition. Some elements in the the final sum may exceed 255 which is the maximum value for intensity for an image. OpenCV deals with this by classifying all values greater than 255 as maximum intensity.</p>
+<p>[7] The above code did simple matrix addition. Some elements in the the final sum may exceed 255 which is the maximum value for intensity for an image. OpenCV deals with this by classifying all values greater than 255 as maximum intensity.</p>
 <p>For example, if elements add up to 321, the pixel with have same intensity as 255.</p>
 <p>In short, all pixels with values greater than 255 are pure white. This may lead to loss in detail in the resultant image</p>
 </div>
@@ -7553,10 +7557,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [141]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">mat1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">img1</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span> <span class="c1">#[7]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[8]</span>
+
+<span class="n">mat1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">img1</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span> 
 <span class="n">mat1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">255</span><span class="p">)</span><span class="o">*</span><span class="n">mat1</span>
 
 <span class="n">mat2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">img2</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span>
@@ -7576,9 +7582,9 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[141]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.image.AxesImage at 0x78979376c800&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x722a4cf3d5b0&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7605,10 +7611,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [143]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">PicSum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span> <span class="c1">#[8]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[9]</span>
+
+<span class="k">def</span> <span class="nf">PicSum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span> 
     <span class="n">matx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">x</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span>
     <span class="n">matx</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">255</span><span class="p">)</span><span class="o">*</span><span class="n">matx</span>
     <span class="n">maty</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">y</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span>
@@ -7628,10 +7636,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [144]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">PicSum</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span><span class="n">img2</span><span class="p">)</span> <span class="c1">#[9]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[10]</span>
+
+<span class="n">PicSum</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span><span class="n">img2</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -7642,9 +7652,9 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[144]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.image.AxesImage at 0x7897937cdf40&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x722a4cf96ed0&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7662,7 +7672,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%5B10%5D-Weighted-Addition">[10] Weighted Addition<a class="anchor-link" href="#%5B10%5D-Weighted-Addition">¶</a></h3>
+<h3 id="%5B11%5D-Weighted-Addition">[11] Weighted Addition<a class="anchor-link" href="#%5B11%5D-Weighted-Addition">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7673,7 +7683,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>[11] We shall use the following formula to do weighted addition of images:</p>
+<p>[12] We shall use the following formula to do weighted addition of images:</p>
 <p>I = α × A + (1 − α) × B</p>
 <p>Where I is the final image matrix, and A, B are the input image matrices. α is the parameter which will control weight of an image.</p>
 </div>
@@ -7684,10 +7694,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [145]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">W_add</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">k</span><span class="p">):</span> <span class="c1">#[12]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[13]</span>
+
+<span class="k">def</span> <span class="nf">W_add</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">k</span><span class="p">):</span> 
     <span class="k">return</span><span class="p">(</span> <span class="n">k</span><span class="o">*</span><span class="n">p</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">q</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">W_PicSum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
@@ -7710,10 +7722,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [146]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">W_PicSum</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span><span class="n">img2</span><span class="p">,</span><span class="mf">0.8</span><span class="p">)</span> <span class="c1">#[13]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[14]</span>
+
+<span class="n">W_PicSum</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span><span class="n">img2</span><span class="p">,</span><span class="mf">0.8</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -7724,9 +7738,9 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[146]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.image.AxesImage at 0x7897937193a0&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x722a4cf96e70&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7744,7 +7758,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="%5B14%5D-Multi-Channel-Images">[14] Multi Channel Images<a class="anchor-link" href="#%5B14%5D-Multi-Channel-Images">¶</a></h2>
+<h2 id="%5B15%5D-Multi-Channel-Images">[15] Multi Channel Images<a class="anchor-link" href="#%5B15%5D-Multi-Channel-Images">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7755,7 +7769,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>[15] Let us try to add the following images:</p>
+<p>[16] Let us try to add the following images:</p>
 <img alt="No description has been provided for this image" src="Images/city.jpg" width="300"/>
 <img alt="No description has been provided for this image" src="Images/space.jpg" width="300"/>
 </div>
@@ -7766,10 +7780,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [147]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">img_city</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">"Images/city.jpg"</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#[16]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[17]</span>
+
+<span class="n">img_city</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">"Images/city.jpg"</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> 
 
 <span class="n">img_space</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">"Images/space.jpg"</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
@@ -7782,10 +7798,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [148]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">mat_city_B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">img_city</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span> <span class="c1">#[17]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[18]</span>
+
+<span class="n">mat_city_B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">img_city</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span> 
 <span class="n">mat_city_G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">img_city</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">mat_city_R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asmatrix</span><span class="p">(</span><span class="n">img_city</span><span class="p">[:,:,</span><span class="mi">2</span><span class="p">])</span>
 
@@ -7808,10 +7826,12 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [149]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mat_sum</span><span class="p">)</span> <span class="c1">#[18]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#[19]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mat_sum</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -7822,9 +7842,9 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[149]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.image.AxesImage at 0x789798051a30&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x722a4d915460&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
