@@ -1,10 +1,17 @@
-#Import only if not previously imported
-import cv2
+import numpy as np
 import matplotlib.pyplot as plt
-import numpy
+import cv2
 
-img = cv2.imread('Image Processing/Images/bwdiagonal.jpg', -1)
+array = np.zeros([8,8,3], dtype= np.uint8)
 
-plt.imshow(img)
+for i in range(0,8):
+    for j in range(0,8):
+        array[i,j] = (0,255,0)
+
+# cv2.imwrite('Image.jpg', array)
+
+print(array)
+
+plt.imshow(array, cmap= 'Blues')
 
 plt.show()
