@@ -41,7 +41,7 @@ title_label = ttk.Label(
 title_label.pack(side= 'right')
 
 #Photo
-pic = Image.open('Python GUI/logo.png')
+pic = Image.open('Python GUI\\Unit Converter\\logo.png')
 
 pic_resized = pic.resize((70,70), Image.Resampling.NEAREST)
 
