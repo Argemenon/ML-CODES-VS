@@ -31,14 +31,23 @@ window.geometry('550x700')
 frame = ttk.Frame()
 
 #buttons
-open_button = ttk.Button(frame, text= 'Open File Explorer', command= OpenFile)
+open_button = ttk.Button(
+    frame, 
+    text= 'Open File Explorer', 
+    command= OpenFile
+    )
 open_button.pack(pady= 5, padx= 3)
 open_button.pack(side= 'left')
 
-exit_button = ttk.Button(frame, text= 'Exit', command= lambda: exit())
+exit_button = ttk.Button(
+    frame, 
+    text= 'Exit', 
+    command= lambda: exit()
+    )
 exit_button.pack(side= 'left')
 
-frame.pack() #button frame ends
+frame.pack() 
+#button frame ends
 
 #image
 img_label = ttk.Label(window)
