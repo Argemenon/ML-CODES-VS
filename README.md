@@ -1,9 +1,14 @@
-# Learning OpenCV using Jupyter Notebook
+# OpenCV and Tkinter Learning Repository
 
-This is my repo for learning OpenCV, an open-source computer vision library using Jupyter Notebook.
+Welcome to my OpenCV and Tkinter learning repository! This project documents my journey as i explore computer vison with OpenCV and GUI developement with Tkinter in Python. The end goal is to learn machine learning and impliment it to research in Physics.
 
-## Introduction
+## Objectives
++ Learn the basics of OpenCv for image processign and computer vison
++ Build graphical user interfaces (GUIs) using Tkinter.
++ Combine OpenCV and Tkinter to create interactive applications
 
-This project aims to help learn OpenCV from scratch with examples implemented in Python using Jupyter Notebook. The notebook covers basic image processing techniques as of now.
-The library also contains programs handling basic python GUI
-#### ~Argemenon
+## Tools and Technologies
++ Python and Jupyter notebooks
++ Python Libraries used:
+    + OpenCV for image processing and computer vison tasks.
+    + Tkinter for creating GUIs
