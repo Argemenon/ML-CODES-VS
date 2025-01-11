@@ -1,0 +1,113 @@
+ML COOKBOOK
+
+
+
+
+1. ***INSTALLING UBUNTU***
+	
+You will need a usb pendrive with atleast atleast 8gb capacity. You should have atleast 25gb of free disk space.
+
+A. Making a bootable USB drive
+1. Download the iso file for ubuntu from ubuntu.com
+2. Download and Install Rufus from rufus.ie. Open the application and select your USB drive in the interface, next select the .iso file for Ubuntu. Press the start button and wait for the application to make a bootable usb drive.
+3. Once finished, you have a bootable pen drive that we will use next.
+
+# If you have BitLocker Encryption for your drives, make sure to turn it off to avoid problems. To turn it off look in security settings in windows settings.
+
+B. Making unallocated space for ubuntu in you SSD/HDD
+1. Open Disk Management
+2. Choose the disk you want to allocate for ubuntu
+3. right click on the disk and select shrink volume
+4. Enter the amount you want to allocate to Ubuntu, 50Gb should be fine
+5. Click Shrink Volume
+
+C. Changing BIOS Settings
+1. Restart your system and press f2 (Look up bios key for your pc brand), bios interface will appear on your screen. 
+2. Navigate your bios and turn off secure boot option
+3. Look for boot priority order and give USB highest priority.
+4. Save and Exit
+
+D. Installing Ubntu
+1. A screen will appear with option to install ubuntu
+2. click install Ubuntu
+3. Go through the terms and conditions and personalisation
+4. The installer will ask you how you want to install ubuntu in your system. We are trying to install ubuntu in dual boot mode so we can access both ubuntu and windows. Select the custom installation option. You will now see a breakdown of partitions of your drive. Look for a partition labeled as free space matching the amount you allocated for ubuntu in step B.
+5. Select the volume and press the + button below, now you need to specify details for a new partition. Use the full volume available and select Ext4 in the "Use as" option. Set the "Mount Point" to be "/". Press Next.
+6. Enter your preferred username and password.
+7. Hit the Install button!
+8. Restart your device after the installation is done (You can now remove your usb drive)
+
+Ubuntu is now installed and you can now access both ubuntu and windows via the grub menu that will appear as your system powers on.
+
+|
+|
+|
+|
+
+2. ***CREATING ANACONDA ENVIRONMENTS IN UBUNTU***
+
+Anaconda environments help us in making isolated environments where we may install specific versions of python and libraries.
+This is useful because each environment is completely isolated from other, so if something goes wrong in one it does not affect other.
+
+### Step1
+
+1. open terminal
+2. Make sure conda is installed by running the following code:
+        ```
+        conda info
+
+        ```
+3. Look at the environments you currently have by the following code:
+        ```
+        conda env list
+
+        ```
+    You will see all the environments you have, if you have just installed anaconda, you will only see the base environment.
+
+###Step2
+
+1. Create a new environment my using the following command:
+        ```
+
+        conda create --name [YourPrefferedName] python=[pythonVersion]
+        Eg:
+        conda create --name mlenv python=3.12
+
+        ```
+
+2. Check if the environment is created by command in 3. of Step1
+
+3. Activate your environment my using the following command:
+        ```
+
+        conda activate [YourPreferredName]
+        Eg:
+        conda activate mlenv
+
+You are now in your new conda env. You can now select this environment by Changing the interpreter settings in your code editor.
+
+###Step3
+
+1. Install your preferred libraries by using the pip command:
+        ```
+        Eg:
+        pip install opencv-python
+        pip install matplotlib 
+
+        ```
+
+|
+|
+|
+|
+
+3. ***Installing tkinter library in python***
+
+###Step1
+
+1. Use the pip command:
+        ```
+        pip install tk
+
+        ```
+tkinter is now installed in your environment
