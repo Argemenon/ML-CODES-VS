@@ -1,9 +1,9 @@
 # OpenCV and Tkinter Learning Repository
 
-Welcome to my OpenCV and Tkinter learning repository! This project documents my journey as i explore computer vison with OpenCV and GUI developement with Tkinter in Python. The end goal is to learn machine learning and impliment it to research in Physics.
+Welcome to my OpenCV and Tkinter learning repository! This project documents my journey as I explore computer vison with OpenCV and GUI developement with Tkinter in Python. The end goal is to learn machine learning and impliment it to research in Physics.
 
 ## Objectives
-+ Learn the basics of OpenCv for image processign and computer vison
++ Learn the basics of OpenCV for image processing and computer vison
 + Build graphical user interfaces (GUIs) using Tkinter.
 + Combine OpenCV and Tkinter to create interactive applications
 
