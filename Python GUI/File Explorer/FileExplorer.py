@@ -51,6 +51,7 @@ frame.pack()
 
 #image
 img_label = ttk.Label(window)
+img_label.pack(expand = True)
 img_label.pack(pady= 10)
 
 #combobox
