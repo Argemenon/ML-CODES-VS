@@ -2,6 +2,7 @@
 import tkinter as tk
 import ttkbootstrap as ttk
 
+#definitions
 
 def input_string(entry): #changes values in the output window
     entry_text.set(value= entry_text.get() + str(entry))
