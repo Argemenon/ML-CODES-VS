@@ -1,0 +1,1 @@
+borderwidth = 2, bordercolor = 'white'
