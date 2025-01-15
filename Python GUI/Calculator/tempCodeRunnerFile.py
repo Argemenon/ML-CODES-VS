@@ -1,1 +1,2 @@
-borderwidth = 2, bordercolor = 'white'
+#run
+window.mainloop()
