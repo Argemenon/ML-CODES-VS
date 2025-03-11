@@ -47,7 +47,7 @@ frame_number = tk.IntVar(value= 0)
 label2 = ttk.Label(window, textvariable= frame_number, font= 'Calibri 20')
 label2.pack()
 
-ip_camera_url = "http://100.66.205.244:8080/video"
+ip_camera_url = "http://100.117.73.163:8080/video"
 play_ip_video(ip_camera_url)
 
 #run
